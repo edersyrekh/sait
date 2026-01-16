@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Клиника Доктора Мыреева</title>
+</head>
+
+<body>
+    <header>
+
+       
+
+
+
+        <h1>Авторская клиника<br>Dr. МЫР≡≡В⋀<br>Стоматология & SPA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+         <div class="appointment-section">
+     
+    <div class="appointment-content">
+        <h1>Запишитесь на прием прямо сейчас!</h1>
+        <button class="button"><a href="appointment.html"><span>Записаться</span></a></button>
+        <style>
+             
+        .button {
+            background-color: #6200EA;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 15px 30px;
+            top: 250px;
+            left: 0%;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .button:hover {
+            background-color: #3700B3;
+            transform: translateY(-2px);
+        }
+        .button:after {
+            content: '';
+            position: absolute;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.3);
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.5s ease;
+            z-index: 0;
+        }
+        .button:hover:after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .button span 
+        {
+            text-decoration: none;
+            position: relative;
+            z-index: 1;
+            font-family: Arial, sans-serif;
+        }
+        button a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+    </style>
+    </header>
+
+    <main>
+	<!-- Новый блок для кнопки "Записаться" -->
+ 
+
+        
+    </div>
+</div>
+
+	
+        <h2>Добро пожаловать в нашу клинику!</h2>
+        <p>Мы предоставляем широкий спектр медицинских услуг для вашего здоровья.</p>
+
+        <h2>О клинике</h2>
+        <p>Клиника Доктора Мыреева была основана в 2020 году с целью предоставления качественной медицинской помощи. Наша команда состоит из опытных врачей и медицинского персонала, готовых оказать вам помощь в любое время.</p>
+        <p>Наша миссия — заботиться о вашем здоровье и благополучии, используя современные технологии и инновационные методы лечения.</p>
+
+        <h2>Наши ценности</h2>
+        <ul>
+            <li>Профессионализм</li>
+            <li>Ответственность</li>
+            <li>Индивидуальный подход</li>
+            <li>Комфорт и безопасность</li>
+        </ul>
+
+        <div class="image-gallery">
+            <img src="images/clinic.jpg" alt="Клиника">
+            <img src="images/team.jpg" alt="Наша команда">
+            <img src="images/waiting_room.jpg" alt="Ожидание">
+            <img src="images/doctor.jpg" alt="Доктор">
+            <img src="images/patient.jpg" alt="Пациент">
+        </div>
+
+        
+    </main>
+
+    <footer>
+    <div class="footer-content">
+        <p><strong>Адрес:</strong> ул. Примерная, д. 1, Город</p>
+        <p><strong>Телефон:</strong> +7 (000) 000-00-00</p>
+        <p><strong>Email:</strong> info@klinika-mireeva.ru</p>
+        <p><strong>Часы работы:</strong> Пн - Пт: 9:00 - 18:00; Сб: 10:00 - 16:00; Вс: выходной</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/00000000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2023 Клиника Доктора Мыреева</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
