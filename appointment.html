@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <h1>Запись на прием</h1>
+        <h1>Авторская клиника<br>Dr. МЫР≡≡В⋀<br>Стоматология & SPA</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Главная</a></li>
@@ -21,27 +21,125 @@
         </nav>
     </header>
 
-    <main>
-        <h2>Форма записи на прием</h2>
-        <form id="appointment-form" action="send_email.php" method="POST">
-    <label for="name">Имя:</label>
-    <input type="text" id="name" name="name" required>
 
-    <label for="phone">Телефон:</label>
-    <input type="tel" id="phone" name="phone" required>
+    <style>
+         {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+        .form-container {
+            background-color: #ffffff;
+            padding: 2rem;
+            position: relative;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            left: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
 
-    <label for="date">Дата назначения:</label>
-    <input type="date" id="date" name="date" required>
+        h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
 
-    <label for="time">Время назначения:</label>
-    <input type="time" id="time" name="time" required>
+        .form-group {
+            margin-bottom: 1rem;
+        }
 
-    <button type="submit">Записаться</button>
-</form>
-    </main>
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"],
+        input[type="time"] {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus,
+        input[type="time"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.5rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 500px) {
+            .form-container {
+                padding: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+
+
+
+    <div class="form-container">
+    <h2>Запись на прием</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">ФИО</label>
+            <input type="text" id="name" name="name" required placeholder="Иванов Иван Иванович">
+        </div>
+        <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="1234567890">
+        </div>
+        <div class="form-group">
+            <label for="email">Электронная почта</label>
+            <input type="email" id="email" name="email" required placeholder="primer@mail.ru">
+        </div>
+        <div class="form-group">
+            <label for="date">Дата назначения</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="time">Время назначения</label>
+            <input type="time" id="time" name="time" required>
+        </div>
+        <button type="submit">Записаться</button>
+    </form>
+</div>
 
     <footer>
     <div class="footer-content">
