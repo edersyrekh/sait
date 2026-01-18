@@ -95,7 +95,7 @@ h2 { border-bottom: 2px solid #0078d4; padding-bottom: 10px; margin-bottom: 20px
     display: block;
 } 
  
-
+.p4 { text-indent: 25px; }
 
 .slide.active { opacity: 1; / Отображаем активный слайд / }
 
@@ -116,7 +116,7 @@ button:hover { background-color: #005bb5; / Более темный цвет к�
 
 footer { background-color: #333; / темно-серый цвет / color: white; / Цвет текста / text-align: center; / Центрируем текст / padding: 15px 0; }
 
-.footer-content { text-align: center; / Центрируем содержимое футера / margin-bottom: 10px; color: #fff; / Полупрозрачный фон для выделения текста  / padding: 10px; / Немного отступа вокруг текста / border-radius: 5px; / Сглаживание углов / }
+.footer-content { position: relative; top:10px; text-align: center; / Центрируем содержимое футера / margin-bottom: 10px; color: #fff; / Полупрозрачный фон для выделения текста  / padding: 10px; / Немного отступа вокруг текста / border-radius: 5px; / Сглаживание углов / }
 
 .footer-content p { margin: 5px 0; / Отступы между строками / text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); / Тень для текста / }
 

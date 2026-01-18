@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Клиника Доктора Мыреева</h1>
+        <h1>Авторская клиника<br>Dr. МЫР≡≡В⋀<br>Стоматология & SPA</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Главная</a></li>
@@ -18,6 +18,110 @@
                 <li><a href="contact.html">Контакты</a></li>
             </ul>
         </nav>
+   
+        <style>
+         {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .video-container {
+            height: 300px;
+            top: -300px;
+            position: relative;
+            left: 4%;
+            width: 80%;
+            max-width:650px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="video-container">
+    <video autoplay loop muted playsinline>
+        <source src="images/video.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+</div>
+
+
+
+
+
+
+
+
+
+
+         <div class="appointment-section">
+     
+    <div class="appointment-content">
+        <h1> </h1>
+        <button class="button"><a href="appointment.html"><span>Записаться</span></a></button>
+        <style>
+             
+        .button {
+            background-color: #6200EA;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 15px 30px;
+            top: 250px;
+            left: 0%;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .button:hover {
+            background-color: #3700B3;
+            transform: translateY(-2px);
+        }
+        .button:after {
+            content: '';
+            position: absolute;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.3);
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.5s ease;
+            z-index: 0;
+        }
+        .button:hover:after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .button span 
+        {
+            text-decoration: none;
+            position: relative;
+            z-index: 1;
+            font-family: Arial, sans-serif;
+        }
+        button a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+    </style>
     </header>
 
     <main>
@@ -48,13 +152,13 @@
 
     <footer>
     <div class="footer-content">
-        <p><strong>Адрес:</strong> ул. Примерная, д. 1, Город</p>
-        <p><strong>Телефон:</strong> +7 (000) 000-00-00</p>
+        <p><strong>Адрес:</strong> ул. Петра Алексеева, д. 4/2, г.Якутск</p>
+        <p><strong>Телефон:</strong> +7 (914) 274-46-46</p>
         <p><strong>Email:</strong> info@klinika-mireeva.ru</p>
-        <p><strong>Часы работы:</strong> Пн - Пт: 9:00 - 18:00; Сб: 10:00 - 16:00; Вс: выходной</p>
+        <p><strong>Часы работы:</strong> Пн - Пт: 10:00 - 20:00; Сб: 11:00 - 20:00; Вс: 11:00 - 18:00</p>
     </div>
     <div class="social-icons">
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/clinica_dr_myreeva?igsh=ZGI5ODN5bHpjczNy" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://wa.me/00000000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
     <p>&copy; 2023 Клиника Доктора Мыреева</p>

@@ -24,7 +24,7 @@ showSlide(currentSlide); // Показываем первый слайд при 
 
  
 
-document.getElementById('appointment-form').addEventListener('submit', function (e) {
+document.getElementById('form-container').addEventListener('submit', function (e) {
     e.preventDefault();
     alert('Запись успешно отправлена! Мы свяжемся с вами в ближайшее время.');
     this.reset();
